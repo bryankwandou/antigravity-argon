@@ -1,0 +1,285 @@
+{
+  "brand": {
+    "name": "Antigravity Argon",
+    "shortName": "Argon",
+    "preloaderTitle": "Precision Digital Architecture",
+    "skipLoader": "Skip Intro"
+  },
+  "nav": {
+    "homeAria": "Antigravity Argon home",
+    "modules": "Modules",
+    "cases": "Case Records",
+    "protocol": "Methodology",
+    "tiers": "Tiers",
+    "demo": "Live Lab",
+    "connect": "Partner With Us",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "switchTheme": "Switch display theme",
+    "switchLang": "Switch language"
+  },
+  "hero": {
+    "kicker": "Enterprise IT Architecture & Kinetic Design Atelier",
+    "titleLine1": "Digital systems",
+    "titleLine2": "with unmistakable",
+    "titleLine3": "visual gravity",
+    "subtitle": "We engineer high-velocity web platforms, kinetic interface systems, and autonomous cloud foundations for technology enterprises that refuse generic templates.",
+    "primaryCta": "Commission Your System",
+    "secondaryCta": "Explore Argon Lab",
+    "telemetry": [
+      { "value": "99.98%", "label": "Production Uptime" },
+      { "value": "120fps", "label": "Kinetic Frame Target" },
+      { "value": "48+", "label": "Enterprise Partners" }
+    ]
+  },
+  "manifesto": {
+    "lines": [
+      "The next advantage",
+      "isn't more software.",
+      "It's precision craft."
+    ],
+    "col1Kicker": "The Argon Standard",
+    "col1Body": "Four architectural commissions engineered into a unified digital nervous system. Not a template library, but a bespoke dialogue between editorial taste and mission-critical engineering.",
+    "col2Kicker": "Reserved B2B Cohort",
+    "col2Body": "We accept a select cohort of enterprise partners each quarter so every interaction curve, design token, and edge deployment receives direct principal architect execution."
+  },
+  "metrics": [
+    { "value": 12, "suffix": "+", "label": "Years Engineering" },
+    { "value": 48, "suffix": "+", "label": "Enterprise Systems" },
+    { "value": 14, "suffix": "", "label": "Global Edge Zones" },
+    { "value": 98, "suffix": "%", "label": "Partner Retention" }
+  ],
+  "marquee": [
+    "Kinetic Web Engine",
+    "Autonomous Cloud Mesh",
+    "Spatial Design System",
+    "Zero-Trust FinTech Core",
+    "Systems Cartography",
+    "Edge Integration"
+  ],
+  "modules": {
+    "kicker": "The Argon Adaptive Line",
+    "heading": "Four core modules. One unified enterprise stack.",
+    "inspectCta": "Simulate in Live Lab",
+    "items": [
+      {
+        "id": "kinetic-ui",
+        "tag": "01",
+        "name": "Kinetic Web Engine",
+        "line": "120fps interface choreography & spatial motion",
+        "copy": "A physics-backed web rendering engine with GPU-accelerated transitions and tactile micro-interactions that turn passive traffic into unmistakable enterprise authority.",
+        "specs": [
+          { "k": "Input Latency", "v": "3.8 ms" },
+          { "k": "Lighthouse", "v": "99 / 100" },
+          { "k": "Sprint Cycle", "v": "14 days" }
+        ],
+        "baseLatency": 3.8,
+        "baseThroughput": 99.4,
+        "nodes": ["Dual-Layer Virtual DOM", "GSAP Frame Scheduler", "GPU Shader Compositor", "Adaptive Theme Tokens"]
+      },
+      {
+        "id": "neural-cloud",
+        "tag": "02",
+        "name": "Autonomous Cloud Mesh",
+        "line": "Distributed edge topology & AI orchestration",
+        "copy": "A resilient microservice fabric with predictive load routing across 14 global edge zones, engineered to absorb traffic spikes without frame drops.",
+        "specs": [
+          { "k": "P99 Response", "v": "16.4 ms" },
+          { "k": "Topology", "v": "Multi-Edge" },
+          { "k": "Failover", "v": "< 80 ms" }
+        ],
+        "baseLatency": 16.4,
+        "baseThroughput": 99.98,
+        "nodes": ["Anycast Edge Gateway", "Predictive Load Router", "Instant State Replication", "Telemetry Observer"]
+      },
+      {
+        "id": "spatial-ds",
+        "tag": "03",
+        "name": "Spatial Design System",
+        "line": "Multi-platform token architecture & accessibility",
+        "copy": "A centralized design engineering foundation synchronizing color tokens, editorial typography, and accessible primitives from design canvas directly to production.",
+        "specs": [
+          { "k": "Contrast Tier", "v": "WCAG AA+" },
+          { "k": "Token Coverage", "v": "100%" },
+          { "k": "Bundle Footprint", "v": "11.2 kB" }
+        ],
+        "baseLatency": 1.9,
+        "baseThroughput": 100.0,
+        "nodes": ["Semantic Token Engine", "Accessible Primitives", "Automated CI/CD Sync", "Native Light & Dark Modes"]
+      },
+      {
+        "id": "zerotrust-core",
+        "tag": "04",
+        "name": "Zero-Trust FinTech Core",
+        "line": "Cryptographic verification & high-frequency ledgers",
+        "copy": "End-to-end hardened security architecture with real-time cryptographic attestation built for financial institutions, digital banking, and enterprise settlement.",
+        "specs": [
+          { "k": "Attestation", "v": "2.1 ms" },
+          { "k": "Cipher Suite", "v": "AEAD-256" },
+          { "k": "Audit Trail", "v": "Immutable" }
+        ],
+        "baseLatency": 2.1,
+        "baseThroughput": 99.99,
+        "nodes": ["Hardware Key Isolation", "Strict Schema Validation", "Real-Time Anomaly Guard", "Encrypted Audit Stream"]
+      }
+    ]
+  },
+  "cases": {
+    "kicker": "Case Records",
+    "heading": "Measured outcomes from prior cohorts.",
+    "quote": "Antigravity Argon is not a template agency. They are a principal engineering atelier that transformed how institutional partners perceive our technology.",
+    "viewRecord": "Inspect Architecture",
+    "closeModal": "Close Record",
+    "impactLabel": "Production Impact Metrics",
+    "stackLabel": "Deployed Architecture Stack",
+    "items": [
+      {
+        "id": "meridian-quant",
+        "module": "Kinetic Web Engine",
+        "place": "Singapore · Execution Terminal",
+        "title": "Meridian Quant Institutional Portal",
+        "summary": "Complete architectural overhaul of an institutional liquidity platform featuring 120fps telemetry visualization and a 74% reduction in initial load time.",
+        "metrics": ["+184% Institutional Partner Conversion", "0.6s First Contentful Paint", "99.99% Uptime Under Peak Volatility"],
+        "stack": ["React 19", "TypeScript", "GSAP ScrollTrigger", "Edge WebSockets"]
+      },
+      {
+        "id": "velox-cloud",
+        "module": "Autonomous Cloud Mesh",
+        "place": "Jakarta & Tokyo · Hybrid Mesh",
+        "title": "Velox Sovereign Cloud Console",
+        "summary": "Multi-region infrastructure control plane enabling enterprise DevOps teams to inspect 12,000+ live nodes simultaneously with zero UI thread blocking.",
+        "metrics": ["14.2ms Cross-Region Telemetry Latency", "-62% Browser Memory Footprint", "4.9/5 Principal Engineer Satisfaction"],
+        "stack": ["Vite", "Tailwind Token Engine", "Canvas 2D Topology", "Rust Edge API"]
+      },
+      {
+        "id": "aurum-pay",
+        "module": "Zero-Trust FinTech Core",
+        "place": "Zurich · Settlement Network",
+        "title": "Aurum Cross-Border Settlement Suite",
+        "summary": "Bespoke design system and corporate onboarding portal for an institutional cross-currency settlement rail with multi-stage cryptographic verification.",
+        "metrics": ["3.2x Faster Corporate Onboarding", "100% External Security Audit Pass", "Zero Visual Regression Incidents"],
+        "stack": ["Design Tokens CSS", "Strict Schema Validation", "Bilingual i18n Engine", "Automated E2E"]
+      },
+      {
+        "id": "solaris-ai",
+        "module": "Spatial Design System",
+        "place": "San Francisco · Enterprise AI",
+        "title": "Solaris Autonomous Agent Studio",
+        "summary": "Unification of 18 fragmented enterprise products into a single coherent spatial design system with real-time light and dark mode parity.",
+        "metrics": ["-58% Feature Delivery Cycle Time", "100% Token Parity Across 18 Apps", "+210% Interactive Demo Engagement"],
+        "stack": ["Monorepo UI Kit", "Lenis Smooth Inertia", "WCAG AA Accessibility", "Interactive Sandbox"]
+      }
+    ]
+  },
+  "protocol": {
+    "kicker": "Engineering Protocol",
+    "heading": "From system scan to global edge.",
+    "blueprintTitle": "Argon Execution Blueprint",
+    "blueprintSub": "Deterministic delivery with continuous live telemetry",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Systems Cartography & Audit",
+        "copy": "A 72-hour architectural deep dive mapping your existing stack, brand positioning, and conversion bottlenecks before a single component is fabricated."
+      },
+      {
+        "n": "02",
+        "title": "Token & Kinetic Fabrication",
+        "copy": "Bespoke construction of centralized design tokens, accessible UI primitives, and signature motion choreography calibrated exclusively to your enterprise."
+      },
+      {
+        "n": "03",
+        "title": "Edge Fusion & Telemetry",
+        "copy": "Zero-downtime deployment to global edge networks with automated Core Web Vitals verification and long-term architectural stewardship."
+      }
+    ]
+  },
+  "banner": {
+    "caption": "Engineered in the Argon Atelier. Built to outlast trends."
+  },
+  "tiers": {
+    "kicker": "Partnership Tiers",
+    "heading": "Not a vendor contract. An engineering alliance.",
+    "selectTierCta": "Select Partnership Tier",
+    "items": [
+      {
+        "id": "Observe",
+        "kicker": "Initial Assessment",
+        "name": "Diagnostic",
+        "price": "Architecture Audit",
+        "copy": "A focused engagement with our principal architects to evaluate your current frontend performance, design system debt, and visual differentiation.",
+        "featured": false,
+        "points": [
+          "Comprehensive codebase & UX audit",
+          "Argon visual direction prototype",
+          "Written architectural roadmap brief"
+        ]
+      },
+      {
+        "id": "Commission",
+        "kicker": "Flagship Engagement",
+        "name": "Commission",
+        "price": "Full Argon Line",
+        "copy": "End-to-end design and engineering of your flagship enterprise landing experience, interactive product showcase, and production design token system.",
+        "featured": true,
+        "points": [
+          "Full kinetic frontend & motion engineering",
+          "Light/dark token system & bilingual i18n",
+          "Edge performance tuning & launch residency"
+        ]
+      },
+      {
+        "id": "Legacy",
+        "kicker": "Retained Alliance",
+        "name": "Sovereign",
+        "price": "Dedicated Pod",
+        "copy": "Multi-quarter integration of Antigravity Argon principal designers and systems engineers directly alongside your internal product leadership.",
+        "featured": false,
+        "points": [
+          "Full Argon Adaptive Line access",
+          "Cross-product design system governance",
+          "Priority sprint allocation & custom SLA"
+        ]
+      }
+    ]
+  },
+  "demo": {
+    "kicker": "Interactive Architecture Lab",
+    "heading": "Stress-test an Argon module in real time.",
+    "loadLabel": "Simulated Traffic Load (Req/sec)",
+    "motionLabel": "Kinetic Orchestration Mode",
+    "motionActive": "Spring Physics Active",
+    "motionReduced": "Static Precision Mode",
+    "nodesHeading": "Active Subsystems in Module",
+    "liveStatus": "LIVE TELEMETRY",
+    "cta": "Commission This Module"
+  },
+  "connect": {
+    "kicker": "Initiate Partnership",
+    "heading": "A future already in motion.",
+    "copy": "Antigravity Argon is accepting a limited cohort of enterprise IT partners this season. Submit your architectural brief and a principal architect will respond within 24 hours.",
+    "form": {
+      "nameLabel": "Full Name & Role",
+      "nameHint": "Enter your full name and title",
+      "emailLabel": "Corporate Email",
+      "emailHint": "Enter your official corporate email",
+      "companyLabel": "Company / Institution",
+      "companyHint": "Enter your organization name",
+      "intentLabel": "Partnership Tier",
+      "moduleLabel": "Primary Architecture Module",
+      "notesLabel": "Project Scope & Target Timeline",
+      "notesHint": "Outline your design goals, interactive system requirements, or target launch window",
+      "submit": "Begin Partnership Record",
+      "errorRequired": "Please complete all required fields with valid corporate information."
+    },
+    "success": {
+      "title": "Partnership Record Initialized.",
+      "body": "Your architectural brief is stored locally in this session. An Antigravity Argon principal architect will review the following commission parameters:",
+      "reset": "Submit Another Brief"
+    }
+  },
+  "footer": {
+    "links": "Atelier · Case Records · Security · Index",
+    "copyright": "© 2026 Antigravity Argon Atelier. All systems reserved."
+  }
+}

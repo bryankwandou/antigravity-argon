@@ -1,0 +1,285 @@
+{
+  "brand": {
+    "name": "Antigravity Argon",
+    "shortName": "Argon",
+    "preloaderTitle": "Arsitektur Digital Presisi",
+    "skipLoader": "Lewati Intro"
+  },
+  "nav": {
+    "homeAria": "Beranda Antigravity Argon",
+    "modules": "Modul Sistem",
+    "cases": "Rekam Proyek",
+    "protocol": "Metodologi",
+    "tiers": "Kemitraan",
+    "demo": "Lab Interaktif",
+    "connect": "Mulai Kemitraan",
+    "openMenu": "Buka menu navigasi",
+    "closeMenu": "Tutup menu navigasi",
+    "switchTheme": "Ubah tema tampilan",
+    "switchLang": "Ganti bahasa"
+  },
+  "hero": {
+    "kicker": "Atelier Rekayasa Perangkat Lunak & Desain Korporasi",
+    "titleLine1": "Arsitektur web",
+    "titleLine2": "dengan gravitasi",
+    "titleLine3": "visual mutlak",
+    "subtitle": "Kami merancang ekosistem digital berkinerja tinggi, sistem antarmuka kinetik, dan infrastruktur cloud otonom untuk perusahaan teknologi yang menolak standar generik.",
+    "primaryCta": "Jadwalkan Komisaris Teknis",
+    "secondaryCta": "Eksplorasi Lab Argon",
+    "telemetry": [
+      { "value": "99.98%", "label": "Ketersediaan Produksi" },
+      { "value": "120fps", "label": "Target Render Kinetik" },
+      { "value": "48+", "label": "Mitra Korporasi Global" }
+    ]
+  },
+  "manifesto": {
+    "lines": [
+      "Keunggulan teknologi",
+      "bukan sekadar fitur.",
+      "Melainkan presisi rasa."
+    ],
+    "col1Kicker": "Standar Antigravity Argon",
+    "col1Body": "Empat pilar arsitektur yang dirancang menyatu dengan identitas korporasi Anda. Bukan template massal, melainkan rekayasa khusus yang menggabungkan estetika editorial dengan ketangguhan tingkat enterprise.",
+    "col2Kicker": "Kemitraan Terkurasi",
+    "col2Body": "Kami menerima jumlah kemitraan terbatas setiap kuartal agar setiap baris kode, sistem token desain, dan orkestrasi animasi mendapatkan perhatian penuh dari arsitek utama kami."
+  },
+  "metrics": [
+    { "value": 12, "suffix": "+", "label": "Tahun Rekayasa" },
+    { "value": 48, "suffix": "+", "label": "Sistem Enterprise" },
+    { "value": 14, "suffix": "", "label": "Zona Edge Global" },
+    { "value": 98, "suffix": "%", "label": "Retensi Mitra" }
+  ],
+  "marquee": [
+    "Mesin Antarmuka Kinetik",
+    "Topologi Cloud Otonom",
+    "Sistem Desain Spasial",
+    "Inti Keamanan Zero-Trust",
+    "Kartografi Sistem",
+    "Integrasi Edge"
+  ],
+  "modules": {
+    "kicker": "Lini Arsitektur Argon",
+    "heading": "Empat modul inti. Satu ekosistem terpadu.",
+    "inspectCta": "Simulasikan di Lab",
+    "items": [
+      {
+        "id": "kinetic-ui",
+        "tag": "01",
+        "name": "Kinetic Web Engine",
+        "line": "Orkestrasi antarmuka 120fps & interaksi mikro",
+        "copy": "Mesin antarmuka web berbasis fisika pegas, WebGL ringan, dan transisi halaman terarah yang mengubah kunjungan pasif menjadi pengalaman brand berkelas dunia.",
+        "specs": [
+          { "k": "Latensi Input", "v": "3.8 ms" },
+          { "k": "Skor Performa", "v": "99 / 100" },
+          { "k": "Siklus Rilis", "v": "14 hari" }
+        ],
+        "baseLatency": 3.8,
+        "baseThroughput": 99.4,
+        "nodes": ["DOM Virtual Lapis-Ganda", "Penjadwal Frame GSAP", "Penyusun Shader GPU", "Token Tema Adaptif"]
+      },
+      {
+        "id": "neural-cloud",
+        "tag": "02",
+        "name": "Autonomous Cloud Mesh",
+        "line": "Infrastruktur terdistribusi & orkestrasi AI",
+        "copy": "Arsitektur mikroservis terdistribusi dengan perutean beban otomatis di 14 wilayah edge, menjamin ketahanan beban puncak tanpa kompromi kecepatan.",
+        "specs": [
+          { "k": "Waktu Respons P99", "v": "16.4 ms" },
+          { "k": "Topologi", "v": "Multi-Edge" },
+          { "k": "Pemulihan", "v": "< 80 ms" }
+        ],
+        "baseLatency": 16.4,
+        "baseThroughput": 99.98,
+        "nodes": ["Gerbang Edge Anycast", "Penyeimbang Beban Prediktif", "Replikasi State Instan", "Pengamat Telemetri"]
+      },
+      {
+        "id": "spatial-ds",
+        "tag": "03",
+        "name": "Spatial Design System",
+        "line": "Arsitektur token multi-platform & aksesibilitas",
+        "copy": "Fondasi desain terpusat yang menyinkronkan warna, tipografi, dan komponen interaktif dari Figma langsung ke repositori produksi secara real-time.",
+        "specs": [
+          { "k": "Kepatuhan Kontras", "v": "WCAG AA+" },
+          { "k": "Cakupan Token", "v": "100%" },
+          { "k": "Ukuran Paket", "v": "11.2 kB" }
+        ],
+        "baseLatency": 1.9,
+        "baseThroughput": 100.0,
+        "nodes": ["Mesin Token Semantik", "Komponen Aksesibel", "Sinkronisasi CI/CD", "Mode Gelap & Terang"]
+      },
+      {
+        "id": "zerotrust-core",
+        "tag": "04",
+        "name": "Zero-Trust FinTech Core",
+        "line": "Keamanan transaksi & buku besar berkecepatan tinggi",
+        "copy": "Lapisan keamanan enkripsi ujung-ke-ujung dengan verifikasi kriptografi real-time untuk institusi finansial, perbankan digital, dan infrastruktur pembayaran.",
+        "specs": [
+          { "k": "Verifikasi", "v": "2.1 ms" },
+          { "k": "Enkripsi", "v": "AEAD-256" },
+          { "k": "Audit Log", "v": "Imutabel" }
+        ],
+        "baseLatency": 2.1,
+        "baseThroughput": 99.99,
+        "nodes": ["Isolasi Kunci Perangkat", "Validasi Skema Ketat", "Deteksi Anomali Real-Time", "Jejak Audit Terenkripsi"]
+      }
+    ]
+  },
+  "cases": {
+    "kicker": "Rekam Jejak Implementasi",
+    "heading": "Transformasi nyata dari mitra terdahulu.",
+    "quote": "Antigravity Argon bukan sekadar vendor pembuat situs web. Mereka adalah arsitek sistem yang mengubah cara pasar menilai kredibilitas teknologi perusahaan kami.",
+    "viewRecord": "Periksa Arsitektur",
+    "closeModal": "Tutup Detail",
+    "impactLabel": "Metrik Dampak Produksi",
+    "stackLabel": "Konfigurasi Teknologi",
+    "items": [
+      {
+        "id": "meridian-quant",
+        "module": "Kinetic Web Engine",
+        "place": "Singapura · Terminal Eksekusi",
+        "title": "Meridian Quant Institutional Portal",
+        "summary": "Perombakan total portal likuiditas institusional dengan visualisasi telemetri real-time 120fps dan penurunan waktu muat awal sebesar 74%.",
+        "metrics": ["+184% Konversi Kemitraan B2B", "0.6dtk First Contentful Paint", "99.99% Uptime Selama Volatilitas"],
+        "stack": ["React 19", "TypeScript", "GSAP ScrollTrigger", "Edge WebSockets"]
+      },
+      {
+        "id": "velox-cloud",
+        "module": "Autonomous Cloud Mesh",
+        "place": "Jakarta & Tokyo · Jaringan Hibrida",
+        "title": "Velox Sovereign Cloud Console",
+        "summary": "Antarmuka kendali infrastruktur multi-region yang memungkinkan tim DevOps memantau 12.000+ node secara simultan tanpa jeda antarmuka.",
+        "metrics": ["14.2ms Latensi Telemetri Lintas Negara", "-62% Beban Memori Browser", "4.9/5 Skor Kepuasan Insinyur"],
+        "stack": ["Vite", "Tailwind Token Engine", "Canvas 2D Topology", "Rust Edge API"]
+      },
+      {
+        "id": "aurum-pay",
+        "module": "Zero-Trust FinTech Core",
+        "place": "Zurich · Infrastruktur Pembayaran",
+        "title": "Aurum Cross-Border Settlement Suite",
+        "summary": "Sistem desain dan portal onboarding korporasi untuk jaringan penyelesaian lintas mata uang dengan alur verifikasi berlapis yang intuitif.",
+        "metrics": ["3.2x Percepatan Onboarding Mitra", "100% Lulus Audit Keamanan Eksternal", "Zero Insiden Regresi Visual"],
+        "stack": ["Design Tokens CSS", "Strict Schema Validation", "Bilingual i18n Engine", "Automated E2E"]
+      },
+      {
+        "id": "solaris-ai",
+        "module": "Spatial Design System",
+        "place": "San Francisco · Platform AI Enterprise",
+        "title": "Solaris Autonomous Agent Studio",
+        "summary": "Penyatuan 18 aplikasi produk yang terfragmentasi ke dalam satu sistem desain spasial dengan dukungan mode gelap/terang otomatis.",
+        "metrics": ["-58% Waktu Pengembangan Fitur Baru", "100% Konsistensi Lintas 18 Produk", "+210% Durasi Eksplorasi Demo"],
+        "stack": ["Monorepo UI Kit", "Lenis Smooth Inertia", "WCAG AA Accessibility", "Interactive Sandbox"]
+      }
+    ]
+  },
+  "protocol": {
+    "kicker": "Metodologi Rekayasa",
+    "heading": "Dari pemetaan sistem hingga peluncuran global.",
+    "blueprintTitle": "Skema Alur Arsitektur Argon",
+    "blueprintSub": "Siklus eksekusi terukur dengan telemetri langsung",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Kartografi Sistem & Audit",
+        "copy": "Pemetaan menyeluruh atas arsitektur teknologi, identitas brand, dan titik hambatan konversi perusahaan Anda selama 72 jam pertama sebelum satu baris kode ditulis."
+      },
+      {
+        "n": "02",
+        "title": "Fabrikasi Token & Kinetika",
+        "copy": "Pembangunan sistem token desain terpusat, komponen interaktif berkinerja tinggi, dan koreografi animasi yang dikalibrasi khusus untuk karakter perusahaan Anda."
+      },
+      {
+        "n": "03",
+        "title": "Integrasi Edge & Telemetri",
+        "copy": "Peluncuran ke jaringan global dengan pengujian beban ketat, pemantauan Core Web Vitals otomatis, dan pendampingan teknis berkelanjutan."
+      }
+    ]
+  },
+  "banner": {
+    "caption": "Dirancang di Atelier Argon. Dibangun untuk memimpin industri."
+  },
+  "tiers": {
+    "kicker": "Model Kemitraan",
+    "heading": "Bukan sekadar kontrak. Sebuah aliansi rekayasa.",
+    "selectTierCta": "Pilih Skema Ini",
+    "items": [
+      {
+        "id": "Observe",
+        "kicker": "Eksplorasi Awal",
+        "name": "Diagnostic",
+        "price": "Audit Arsitektur",
+        "copy": "Sesi evaluasi mendalam bersama arsitek utama kami untuk membedah performa UI/UX, kecepatan sistem, dan peluang diferensiasi visual perusahaan Anda.",
+        "featured": false,
+        "points": [
+          "Audit kode & performa menyeluruh",
+          "Prototipe konsep arah visual Argon",
+          "Dokumen peta jalan arsitektur tertulis"
+        ]
+      },
+      {
+        "id": "Commission",
+        "kicker": "Program Utama",
+        "name": "Commission",
+        "price": "Lini Penuh Argon",
+        "copy": "Perancangan dan pembangunan menyeluruh landing page korporasi, aplikasi web interaktif, dan sistem desain kustom siap produksi hingga tahap deployment.",
+        "featured": true,
+        "points": [
+          "Desain & rekayasa frontend kinetik penuh",
+          "Sistem token tema gelap/terang & dwibahasa",
+          "Optimasi kecepatan & pendampingan peluncuran"
+        ]
+      },
+      {
+        "id": "Legacy",
+        "kicker": "Kemitraan Jangka Panjang",
+        "name": "Sovereign",
+        "price": "Tim Dedikasi",
+        "copy": "Integrasi tim desain dan insinyur utama Antigravity Argon langsung ke dalam organisasi Anda untuk evolusi produk multi-kuartal.",
+        "featured": false,
+        "points": [
+          "Seluruh modul Lini Adaptif Argon",
+          "Pemeliharaan sistem desain lintas produk",
+          "Prioritas eksekusi fitur & SLA khusus"
+        ]
+      }
+    ]
+  },
+  "demo": {
+    "kicker": "Laboratorium Interaktif",
+    "heading": "Uji kapabilitas modul Argon secara langsung.",
+    "loadLabel": "Simulasi Beban Trafik (Req/dtk)",
+    "motionLabel": "Mode Orkestrasi Kinetik",
+    "motionActive": "Fisika Pegas Aktif",
+    "motionReduced": "Mode Statis Presisi",
+    "nodesHeading": "Komponen Aktif dalam Modul",
+    "liveStatus": "TELEMETRI AKTIF",
+    "cta": "Gunakan Modul Ini untuk Proyek Anda"
+  },
+  "connect": {
+    "kicker": "Inisiasi Kemitraan",
+    "heading": "Masa depan perusahaan Anda dimulai di sini.",
+    "copy": "Antigravity Argon membuka kuota kemitraan terbatas untuk perusahaan IT dan korporasi visioner musim ini. Kirimkan spesifikasi awal Anda dan arsitek kami akan merespons dalam 24 jam.",
+    "form": {
+      "nameLabel": "Nama Lengkap & Jabatan",
+      "nameHint": "Masukkan nama lengkap dan jabatan Anda",
+      "emailLabel": "Email Korporasi",
+      "emailHint": "Masukkan alamat email perusahaan resmi",
+      "companyLabel": "Nama Perusahaan / Institusi",
+      "companyHint": "Masukkan nama perusahaan atau organisasi",
+      "intentLabel": "Skema Kemitraan",
+      "moduleLabel": "Fokus Modul Arsitektur",
+      "notesLabel": "Visi Proyek & Target Waktu",
+      "notesHint": "Jelaskan kebutuhan desain, sistem interaktif, atau target peluncuran Anda",
+      "submit": "Kirim Spesifikasi Kemitraan",
+      "errorRequired": "Mohon lengkapi seluruh kolom wajib dengan format yang benar."
+    },
+    "success": {
+      "title": "Berkas Kemitraan Tercatat.",
+      "body": "Data inisiasi proyek Anda telah disimpan secara aman di sesi ini. Tim arsitek utama Antigravity Argon siap menindaklanjuti spesifikasi berikut:",
+      "reset": "Buat Spesifikasi Baru"
+    }
+  },
+  "footer": {
+    "links": "Atelier · Rekam Proyek · Keamanan · Dokumentasi",
+    "copyright": "© 2026 Antigravity Argon Atelier. Seluruh hak cipta dilindungi."
+  }
+}
