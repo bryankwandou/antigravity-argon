@@ -88,7 +88,7 @@ function HeaderNav({ hidden }: { hidden: boolean }) {
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex min-h-11 items-center gap-2.5 rounded-full py-1.5 pr-3 pl-2 focus-visible:ring-2 focus-visible:ring-accent"
+            className="flex min-h-12 items-center gap-2.5 rounded-full py-1.5 pr-3 pl-2 focus-visible:ring-2 focus-visible:ring-accent"
             aria-label={t.nav.homeAria}
           >
             <BrandMark className="size-8 text-fg" />
@@ -103,7 +103,7 @@ function HeaderNav({ hidden }: { hidden: boolean }) {
                 <button
                   type="button"
                   onClick={() => handleNavigate(item.id)}
-                  className="min-h-11 rounded-full px-3.5 py-2 text-[13px] text-fg/80 transition-colors hover:text-fg focus-visible:ring-2 focus-visible:ring-accent"
+                  className="min-h-12 rounded-full px-3.5 py-2 text-[13px] text-fg/80 transition-colors hover:text-fg focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {item.label}
                 </button>
@@ -116,7 +116,7 @@ function HeaderNav({ hidden }: { hidden: boolean }) {
               type="button"
               onClick={toggleLocale}
               aria-label={t.nav.switchLang}
-              className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-line px-3 py-1.5 font-mono text-xs font-medium uppercase tracking-wider text-fg transition-colors hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
+              className="inline-flex min-h-12 items-center gap-1.5 rounded-full border border-line px-3 py-1.5 font-mono text-xs font-medium uppercase tracking-wider text-fg transition-colors hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
             >
               <Globe className="size-3.5 text-accent" aria-hidden="true" />
               <span>{locale.toUpperCase()}</span>
@@ -126,7 +126,7 @@ function HeaderNav({ hidden }: { hidden: boolean }) {
               type="button"
               onClick={toggleTheme}
               aria-label={t.nav.switchTheme}
-              className="grid size-11 place-items-center rounded-full border border-line text-fg transition-colors hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
+              className="grid size-12 place-items-center rounded-full border border-line text-fg transition-colors hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
             >
               {theme === 'dark' ? (
                 <Sun className="size-4 text-accent" aria-hidden="true" />
@@ -138,14 +138,14 @@ function HeaderNav({ hidden }: { hidden: boolean }) {
             <button
               type="button"
               onClick={() => handleNavigate('connect')}
-              className="hidden min-h-11 rounded-full bg-fg px-4 py-2 text-[13px] font-medium text-bg transition-transform duration-150 active:scale-[0.96] focus-visible:ring-2 focus-visible:ring-accent sm:inline-flex sm:items-center"
+              className="hidden min-h-12 rounded-full bg-fg px-4 py-2 text-[13px] font-medium text-bg transition-transform duration-150 active:scale-[0.96] focus-visible:ring-2 focus-visible:ring-accent sm:inline-flex sm:items-center"
             >
               {t.nav.connect}
             </button>
 
             <button
               type="button"
-              className="grid size-11 place-items-center rounded-full lg:hidden"
+              className="grid size-12 place-items-center rounded-full lg:hidden"
               aria-label={mobileOpen ? t.nav.closeMenu : t.nav.openMenu}
               onClick={() => setMobileOpen((prev) => !prev)}
             >
@@ -273,7 +273,7 @@ function HeroSection({
             <button
               type="button"
               onClick={onExploreLab}
-              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-bg-elevated/60 px-6 py-3.5 text-[14px] font-medium text-fg backdrop-blur-sm transition-colors hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
+              className="inline-flex min-h-12 items-center gap-2 rounded-full border border-line bg-bg-elevated/60 px-6 py-3.5 text-[14px] font-medium text-fg backdrop-blur-sm transition-colors hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
             >
               <span>{t.hero.secondaryCta}</span>
               <ArrowUpRight className="size-4 text-accent" aria-hidden="true" />
@@ -304,24 +304,21 @@ function HeroSection({
 function ManifestoSection() {
   const { t } = useAppSettings();
   const sectionRef = useRef<HTMLElement | null>(null);
+  const [revealed, setRevealed] = useState(false);
 
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
-    const lines = el.querySelectorAll<HTMLElement>('.line-mask');
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      lines.forEach((line) => line.classList.add('is-revealed'));
+      setRevealed(true);
       return;
     }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry?.isIntersecting) {
-          lines.forEach((line, idx) => {
-            line.style.transitionDelay = `${idx * 0.12}s`;
-            line.classList.add('is-revealed');
-          });
+          setRevealed(true);
           observer.disconnect();
         }
       },
@@ -330,15 +327,18 @@ function ManifestoSection() {
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [t.manifesto.lines]);
+  }, []);
 
   return (
     <section ref={sectionRef} className="bg-bg px-5 py-24 md:px-12 md:py-32 lg:px-16">
       <div className="mx-auto max-w-6xl">
         <h2 className="font-serif text-[2.4rem] leading-[1.05] tracking-[-0.03em] text-fg md:text-6xl lg:text-[5.2rem]">
-          {t.manifesto.lines.map((line) => (
-            <span key={line} className="line-mask is-revealed">
-              <span>{line}</span>
+          {t.manifesto.lines.map((line, idx) => (
+            <span
+              key={line}
+              className={`line-mask ${revealed ? 'is-revealed' : ''}`}
+            >
+              <span style={{ transitionDelay: `${idx * 0.12}s` }}>{line}</span>
             </span>
           ))}
         </h2>
@@ -365,13 +365,15 @@ function ManifestoSection() {
 function MetricsCounterBar() {
   const { t } = useAppSettings();
   const barRef = useRef<HTMLElement | null>(null);
+  const hasAnimatedRef = useRef(false);
 
   useEffect(() => {
     const el = barRef.current;
-    if (!el) return;
+    if (!el || hasAnimatedRef.current) return;
     const counters = el.querySelectorAll<HTMLElement>('[data-count]');
 
     const runAnimation = () => {
+      hasAnimatedRef.current = true;
       counters.forEach((node) => {
         const targetVal = Number(node.dataset.count || 0);
         const state = { val: 0 };
@@ -409,7 +411,9 @@ function MetricsCounterBar() {
         {t.metrics.map((metric) => (
           <div key={metric.label}>
             <p className="font-display text-4xl font-semibold tracking-tight tabular-nums md:text-5xl">
-              <span data-count={metric.value}>{metric.value}</span>
+              <span data-count={metric.value}>
+                {hasAnimatedRef.current ? metric.value : 0}
+              </span>
               {metric.suffix}
             </p>
             <p className="mt-2 text-[11px] uppercase tracking-[0.22em] text-muted">
@@ -588,7 +592,7 @@ function CaseRecordsSection() {
               <button
                 type="button"
                 onClick={() => setActiveCaseIndex(null)}
-                className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-line px-4 py-2 text-xs uppercase tracking-[0.18em] text-fg hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
+                className="inline-flex min-h-12 items-center gap-1.5 rounded-full border border-line px-4 py-2 text-xs uppercase tracking-[0.18em] text-fg hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <X className="size-4" aria-hidden="true" />
                 <span>{t.cases.closeModal}</span>
@@ -776,7 +780,7 @@ function TiersSection({ onSelectTier }: { onSelectTier: (tierId: string) => void
                       onSelectTier(tier.id);
                       smoothScrollToSection('connect');
                     }}
-                    className={`inline-flex min-h-11 w-full items-center justify-center rounded-full border px-5 py-3 text-xs font-semibold uppercase tracking-[0.18em] transition-transform duration-150 active:scale-[0.97] focus-visible:ring-2 focus-visible:ring-accent ${
+                    className={`inline-flex min-h-12 w-full items-center justify-center rounded-full border px-5 py-3 text-xs font-semibold uppercase tracking-[0.18em] transition-transform duration-150 active:scale-[0.97] focus-visible:ring-2 focus-visible:ring-accent ${
                       tier.featured
                         ? 'border-bg/20 bg-bg text-fg'
                         : 'border-line-strong bg-bg text-fg hover:border-fg/40'
@@ -894,7 +898,7 @@ function InteractiveDemoSection({
                 <button
                   type="button"
                   onClick={() => setSpringActive((prev) => !prev)}
-                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-bg px-4 py-2 text-xs font-medium text-fg hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex min-h-12 items-center gap-2 rounded-full border border-line bg-bg px-4 py-2 text-xs font-medium text-fg hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <Sparkles className="size-3.5 text-accent" aria-hidden="true" />
                   <span>
@@ -1087,7 +1091,7 @@ function ConnectSection({
                 <button
                   type="button"
                   onClick={() => setSubmission(null)}
-                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-line-strong px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-fg hover:border-fg/40 focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex min-h-12 items-center justify-center rounded-full border border-line-strong px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-fg hover:border-fg/40 focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {t.connect.success.reset}
                 </button>
