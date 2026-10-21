@@ -146,7 +146,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
         <button
           type="button"
           onClick={handleSkip}
-          className="min-h-11 rounded-full border border-line px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted transition-colors hover:border-line-strong hover:text-fg focus-visible:ring-2 focus-visible:ring-accent"
+          className="min-h-12 rounded-full border border-line px-4 py-2 text-xs uppercase tracking-[0.2em] text-muted transition-colors hover:border-line-strong hover:text-fg focus-visible:ring-2 focus-visible:ring-accent"
         >
           {t.brand.skipLoader}
         </button>
@@ -304,7 +304,7 @@ export function MagneticButton({
       onClick={onClick}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={`inline-flex min-h-11 items-center justify-center rounded-full bg-fg px-7 py-3.5 text-[15px] font-medium tracking-tight text-bg transition-transform duration-150 ease-out active:scale-[0.96] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${className}`}
+      className={`inline-flex min-h-12 items-center justify-center rounded-full bg-fg px-7 py-3.5 text-[15px] font-medium tracking-tight text-bg transition-transform duration-150 ease-out active:scale-[0.96] focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${className}`}
     >
       {children}
     </button>

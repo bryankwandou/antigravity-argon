@@ -108,6 +108,77 @@ export function HeroKineticBackdrop() {
       }
       ctx.restore();
 
+      // 3D Kinetic Architectural Sphere / Torus Core
+      const sphereRadius = Math.min(width, height) * 0.29;
+      const rotY = tick * 0.9 + (pointerX - 0.5) * 1.1;
+      const rotX = 0.38 + (pointerY - 0.5) * 0.65;
+      const cosX = Math.cos(rotX);
+      const sinX = Math.sin(rotX);
+      const cosY = Math.cos(rotY);
+      const sinY = Math.sin(rotY);
+
+      ctx.save();
+      const rings = 9;
+      const segments = 36;
+      for (let r = 1; r < rings; r++) {
+        const phi = (r / rings) * Math.PI;
+        const ringY = Math.cos(phi) * sphereRadius;
+        const ringR = Math.sin(phi) * sphereRadius;
+
+        ctx.beginPath();
+        for (let s = 0; s <= segments; s++) {
+          const theta = (s / segments) * Math.PI * 2;
+          const x0 = Math.cos(theta) * ringR;
+          const z0 = Math.sin(theta) * ringR;
+
+          const x1 = x0 * cosY - z0 * sinY;
+          const z1 = x0 * sinY + z0 * cosY;
+          const y2 = ringY * cosX - z1 * sinX;
+          const z2 = ringY * sinX + z1 * cosX;
+
+          const perspective = 640 / (640 + z2);
+          const px = centerX + x1 * perspective;
+          const py = centerY + y2 * perspective;
+
+          if (s === 0) ctx.moveTo(px, py);
+          else ctx.lineTo(px, py);
+        }
+        ctx.strokeStyle = r === Math.floor(rings / 2) ? accent : fg;
+        ctx.globalAlpha = r === Math.floor(rings / 2) ? 0.55 : 0.14;
+        ctx.lineWidth = r === Math.floor(rings / 2) ? 1.5 : 0.85;
+        ctx.stroke();
+      }
+
+      // Meridian arcs
+      const meridians = 6;
+      for (let m = 0; m < meridians; m++) {
+        const baseTheta = (m / meridians) * Math.PI;
+        ctx.beginPath();
+        for (let s = 0; s <= segments; s++) {
+          const phi = (s / segments) * Math.PI * 2;
+          const x0 = Math.sin(phi) * Math.cos(baseTheta) * sphereRadius;
+          const y0 = Math.cos(phi) * sphereRadius;
+          const z0 = Math.sin(phi) * Math.sin(baseTheta) * sphereRadius;
+
+          const x1 = x0 * cosY - z0 * sinY;
+          const z1 = x0 * sinY + z0 * cosY;
+          const y2 = y0 * cosX - z1 * sinX;
+          const z2 = y0 * sinX + z1 * cosX;
+
+          const perspective = 640 / (640 + z2);
+          const px = centerX + x1 * perspective;
+          const py = centerY + y2 * perspective;
+
+          if (s === 0) ctx.moveTo(px, py);
+          else ctx.lineTo(px, py);
+        }
+        ctx.strokeStyle = m === 0 ? accent : fg;
+        ctx.globalAlpha = m === 0 ? 0.45 : 0.12;
+        ctx.lineWidth = m === 0 ? 1.3 : 0.8;
+        ctx.stroke();
+      }
+      ctx.restore();
+
       if (!reducedMotion) {
         animationFrameId = window.requestAnimationFrame(render);
       }
